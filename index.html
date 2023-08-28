@@ -1,35 +1,196 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>毛常松的作品集与简历</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>毛常松的作品集</title>
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/local.css">
   <link rel="stylesheet" href="css/animate.min.css">
-  <link rel="stylesheet" href="css/hover-min.css">
-  
 
+  <script>
+    function scrollTo(idStr) {
+      const targetElem = document.getElementById(idStr);
+      targetElem.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  </script>
 </head>
 
-<body>
-   <!-- <a href="https://www.google.com" target="_blank">谷歌</a>-->
-   <div id="top">
-    <div id="top__banner">
-      <a href="#inner__education" class="top__banner__button hvr-grow">
-        hvr-grow-test1234
-      </a>
-      <a href="en/index.html" class="top__banner__button hvr-underline-from-center">
-        工作履历
-      </a>
+<body class="mainbody">
+  <header>
+    <div id="index--Header">
+      <h1 id="index--HeaderName">
+        Changsong Mao 毛常松
+      </h1>
+      <nav>
+        <ul id="index--HeaderNavi">
+          <li class="indexNaviItem">
+            <a href="./projects/index.html" id="index--NaviLogo--1">
+              作品
+            </a>
+          </li>
+          <li class="indexNaviItem">
+            <a href="./skills/index.html" id="index--NaviLogo--2">
+              技能
+            </a>
+          </li>
+          <li class="indexNaviItem">
+            <a href="./keywords/index.html" id="index--NaviLogo--3">关键词</a>
+          </li>
+          <li class="indexNaviItem" style="background: none;">
+            <!-- <a href="#index--About" id="index--NaviLogo--4">自我介绍</a> -->
+            <a href="javascript:scrollTo('index--About');" id="index--NaviLogo--4">自我介绍</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-   </div>
-   <div>
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/5YadqILpFzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   </div>
-   <img src="images/test01.jpg" alt="" class="animate__animated animate__backInDown">
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam labore nihil quisquam quam amet at quo voluptatum delectus, reiciendis tenetur accusamus minima dolorum provident odit voluptatem temporibus perspiciatis vero aperiam.</p>
-   <div id="inner__education"></div>
-   <div id="inner__job"></div>
+  </header>
+
+  <main id="container">
+    <section id="index--BackVideo">
+      <video autoplay muted loop plays-inline class="backvideo">
+        <source src="./videos/test.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="index--Contents">
+
+      <section id="index--Projects">
+        <section class="indexContentHeader">
+          <h2 class="indexTitle" id="index--ProjectsTitle">
+            Projects
+          </h2>
+          <p class="indexInfo" id="index--ProjectsInfo">
+            <span class="indexInfo01">During the six years I have been studying game development,</span>
+            <span class="indexInfo02">I have collaborated with my classmates on several game projects,</span>
+            <span class="indexInfo03">which has given me a good understanding of</span>
+            <span class="indexInfo04">the various processes involved in game development.</span>
+          </p>
+        </section>
+
+        <section class="indexContentMenu">
+          <div class="indexContentMenuRow">
+            <div class="indexContentMenuItem01">
+
+            </div>
+            <div class="indexContentMenuItem01">
+  
+            </div>
+          </div>
+          <div class="indexContentMenuRow">
+            <div class="indexContentMenuItem02">
+
+            </div>
+            <div class="indexContentMenuItem02">
+  
+            </div>
+            <div class="indexContentMenuItem02">
+  
+            </div>
+          </div>          
+        </section>
+
+        <section class="indexContentMore">
+          <div class="indexContentMoreBox">
+            <a href="" class="indexContentMoreButton">
+              More
+              <img src="./images/Arrow_Right.webp" alt="" height="28px">
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section id="index--Skills">
+        <section class="indexContentHeader">
+          <h2 class="indexTitle" id="index--SkillsTitle">
+            Skills
+          </h2>
+          <p class="indexInfo" id="index--SkillsInfo">
+            <span class="indexInfo01">I often imitate the effects in my favourite games</span>
+            <span class="indexInfo02">and implement them using Unity or Unreal</span>
+            <span class="indexInfo03">as an exercise for my game programming, technical art, or technical audio
+              skills.</span>
+          </p>
+        </section>
+
+        <section class="indexContentMenu">
+          <div class="indexContentMenuRow">
+            <div class="indexContentMenuItem03">
+
+            </div>
+          </div>
+          <div class="indexContentMenuRow">
+            <div class="indexContentMenuItem03">
+              
+            </div>
+          </div>
+          <div class="indexContentMenuRow">
+            <div class="indexContentMenuItem03">
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="indexContentMore">
+          <div class="indexContentMoreBox">
+            <a href="" class="indexContentMoreButton">
+              More
+              <img src="./images/Arrow_Right.webp" alt="" height="28px">
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <section id="index--About">
+        <section class="indexContentHeader">
+          <h2 class="indexTitle" id="index--AboutTitle">
+            About Myself
+          </h2>
+        </section>
+
+        <section class="indexContentMenu">
+          <div class="indexContentMenuRow">
+            <p>关于我的说明</p>
+          </div>
+        </section>
+      </section>
+    </section>
+
+
+    <!-- <div id="top">
+      <div id="top__banner">
+        <a href="#inner__education" class="top__banner__button hvr-grow">
+          hvr-grow-test1234
+        </a>
+        <a href="en/index.html" class="top__banner__button hvr-underline-from-center">
+          工作履历
+        </a>
+      </div>
+    </div> -->
+
+    <!-- <div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5YadqILpFzI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <img src="images/test01.jpg" alt="" class="animate__animated animate__backInDown">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam labore nihil quisquam quam amet at quo
+      voluptatum delectus, reiciendis tenetur accusamus minima dolorum provident odit voluptatem temporibus perspiciatis
+      vero aperiam.</p>
+    <div id="inner__education"></div>
+    <div id="inner__job"></div> -->
+
+
+  </main>
+
+  <footer>
+    <div id="index--Contact">
+
+    </div>
+  </footer>
 </body>
+
 </html>
