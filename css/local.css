@@ -6,17 +6,7 @@
     background-repeat: no-repeat;
 }
 
-body {
-    scroll-behavior: smooth;
-}
 
-body,main,ul,li,div,section,h1,h2,h3,p,a,img {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    text-decoration: none;
-}
 
 
 img {
@@ -78,7 +68,7 @@ img {
 
     text-indent: -99999px;
     /* 让文字向前缩进从而不显示在网页中，但通过文字来进行SEO */
-    background-image: url(../images/NameLogo.webp);
+    background-image: url(../images/NameLogo01.png);
 }
 
 #index--HeaderNavi {

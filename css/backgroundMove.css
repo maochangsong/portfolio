@@ -1,0 +1,112 @@
+.movingBackground {
+    position: fixed;
+    margin: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(3, 72, 53);
+    /*设定一个圆形的渐变。从颜色过渡到透明。不使用transparent是因为在safari浏览器上会有问题*/
+    background-image:
+        radial-gradient(closest-side, rgb(71, 216, 159), rgba(235, 105, 78, 0)),
+        radial-gradient(closest-side, rgb(51, 186, 143), rgba(171, 235, 76, 0)),
+        radial-gradient(closest-side, rgb(15, 184, 54), rgba(78, 235, 204, 0)),
+        radial-gradient(closest-side, rgb(149, 122, 240), rgba(78, 235, 198, 0)),
+        radial-gradient(closest-side, rgb(30, 224, 238), rgba(7, 81, 60, 0));
+    /*使用vmax单位（屏幕较长的一边），确保在电脑端和移动端都能正常显示*/
+    background-size:
+        130vmax 130vmax,
+        80vmax 80vmax,
+        90vmax 90vmax,
+        110vmax 110vmax,
+        90vmax 90vmax;
+    background-position: 
+        -80vmax -80vmax,
+        60vmax -30vmax,
+        10vmax 10vmax,
+        -30vmax -10vmax,
+        50vmax 50vmax;
+    background-repeat: no-repeat;
+
+    animation: 15s backgroundMovement linear infinite;
+}
+/*增加一块模糊，使得背景色块没有那么泾渭分明*/
+.movingBackground::after{
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+@keyframes backgroundMovement{
+    0%, 100%{
+        background-size:
+        130vmax 130vmax,
+        80vmax 80vmax,
+        90vmax 90vmax,
+        110vmax 110vmax,
+        90vmax 90vmax;
+    background-position: 
+        -80vmax -80vmax,
+        60vmax -30vmax,
+        10vmax 10vmax,
+        -30vmax -10vmax,
+        50vmax 50vmax;
+    }
+    25%{
+        background-size:
+        100vmax 100vmax,
+        90vmax 90vmax,
+        100vmax 100vmax,
+        90vmax 90vmax,
+        55vmax 55vmax;
+    background-position: 
+        -70vmax -70vmax,
+        50vmax -40vmax,
+        0vmax 30vmax,
+        -40vmax -20vmax,
+        40vmax 65vmax;
+    }
+    50%{
+        background-size:
+        110vmax 110vmax,
+        95vmax 85vmax,
+        90vmax 120vmax,
+        100vmax 95vmax,
+        65vmax 65vmax;
+    background-position: 
+        -80vmax -75vmax,
+        55vmax -50vmax,
+        5vmax 20vmax,
+        -35vmax -15vmax,
+        45vmax 75vmax;
+    }
+    75%{
+        background-size:
+        90vmax 90vmax,
+        90vmax 90vmax,
+        100vmax 100vmax,
+        90vmax 90vmax,
+        70vmax 70vmax;
+    background-position: 
+        -50vmax -40vmax,
+        50vmax -30vmax,
+        15vmax 0vmax,
+        -10vmax 0vmax,
+        40vmax 60vmax;
+    }
+}
+
+.testText{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    min-height: 100dvh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: #f9f7dc;
+}

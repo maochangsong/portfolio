@@ -1,0 +1,83 @@
+#banner {
+    position: fixed;
+    vertical-align: middle;
+    width: 100dvw;
+    z-index: 200;
+}
+#banner::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .25) 100%);
+    width: 100%;
+    height: 100px;
+}
+#banner--Content{
+    display: flex;
+    padding: 20px 30px;
+    width: 100%;
+}
+#banner--NameLogo {
+    z-index: 300;
+}
+
+#banner--NameLogo a{
+    display: block;
+    background: url(../images/NameLogo02.png) no-repeat center;
+    background-size: auto 100%;
+    text-indent: -99999px;
+    width: 240px;
+    height: 60px;
+}
+
+#banner--Navi {
+    flex-grow: 1;
+}
+#banner--Navi ul{
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 300;
+}
+#banner--Navi ul li{
+    display: inline-block;
+    margin: 0 30px;
+    height: 100%;
+}
+#banner--Navi ul li a{
+    display: inline-block;
+    text-indent: -9999px;
+    background-size: contain;
+    height: 100%;
+}
+#banner--Navi01{
+    background: url(../images/NaviLogo01.png) no-repeat center;
+    width: calc(0.25 * 545px);
+}
+#banner--Navi02{
+    background: url(../images/NaviLogo02.png) no-repeat center;
+    width: calc(0.25 * 419px);
+}
+#banner--Navi03{
+    background: url(../images/NaviLogo03.png) no-repeat center;
+    width: calc(0.25 * 545px);
+}
+.bannerNaviChosen{
+    position: relative;
+    pointer-events: none;    
+}
+.bannerNaviChosen::before{
+    content: "";
+    background-color: #f9f7dc;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+}
+.bannerNaviUnchosen{
+    opacity: 0.3;
+}
+.bannerNaviUnchosen:hover{
+    opacity: 1;
+}

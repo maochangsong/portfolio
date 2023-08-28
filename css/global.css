@@ -1,0 +1,32 @@
+/*滚动条整体，必须写这个才能使得下面的滚动条效果生效*/
+::-webkit-scrollbar{
+    width: 0.5dvw;
+}
+/*滚动条托柄*/
+::-webkit-scrollbar-thumb{
+    border: 0.12dvw solid transparent;
+    background-clip: content-box;
+    background-color: rgb(155, 155, 155);
+    /* background-color: #c4a162; */
+    border-radius: 0.25dvw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(200, 200, 200);
+}
+/*滚动条背景上层*/
+::-webkit-scrollbar-track-piece{
+    background-color: rgb(40,40,40);
+    /* background-color: #f9f7dc; */
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+body,main,ul,li,div,section,h1,h2,h3,p,a,img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
