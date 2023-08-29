@@ -19,14 +19,21 @@
     /* background-color: #f9f7dc; */
 }
 
+*{
+    font-family: Harmony_SC;
+    font-weight: 400;
+    font-size: 28px;
+    color: #f9f7dc;
+}
+
 body {
     scroll-behavior: smooth;
 }
 
-body,main,ul,li,div,section,h1,h2,h3,p,a,img {
+body,main,ul,li,div,section,h1,h2,h3,h4,h5,p,b,a,img {
     margin: 0;
     padding: 0;
     border: none;
     outline: none;
-    text-decoration: none;
+    /* text-decoration: none; */
 }

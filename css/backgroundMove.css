@@ -26,7 +26,8 @@
         50vmax 50vmax;
     background-repeat: no-repeat;
 
-    animation: 15s backgroundMovement linear infinite;
+    animation: 10s backgroundMovement linear infinite;
+    z-index: -100;
 }
 /*增加一块模糊，使得背景色块没有那么泾渭分明*/
 .movingBackground::after{

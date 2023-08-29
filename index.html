@@ -16,10 +16,11 @@
         behavior: "smooth"
       });
     }
+
   </script>
 </head>
 
-<body class="mainbody">
+<body id="index--MainBody" class="mainbody">
   <header>
     <div id="index--Header">
       <h1 id="index--HeaderName">
@@ -51,7 +52,7 @@
 
   <main id="container">
     <section id="index--BackVideo">
-      <video autoplay muted loop plays-inline class="backvideo">
+      <video autoplay muted loop plays-inline id="index--videoPlayer" class="backvideo">
         <source src="./videos/MainPageVideo.mp4" type="video/mp4">
       </video>
     </section>
@@ -74,7 +75,7 @@
         <section class="indexContentMenu">
           <div class="indexContentMenuRow">
             <div class="indexContentMenuItem01">
-              <a href="" id="index--MenuCell01" class="indexContentMenuCell"> <!--animate__animated animate__fadeInUp-->
+              <a href="./projects/index.html#container--Article01" id="index--MenuCell01" class="indexContentMenuCell"> <!--animate__animated animate__fadeInUp-->
                 <div class="indexContentMenuCellInner">
                   <h3 class="indexContentMenuCellHeader">Countdown World 倒计世界</h3>
                   <p class="indexContentMenuCellText">
@@ -86,7 +87,7 @@
               </a>
             </div>
             <div class="indexContentMenuItem01">
-              <a href="" id="index--MenuCell02" class="indexContentMenuCell">
+              <a href="./projects/index.html#container--Article02" id="index--MenuCell02" class="indexContentMenuCell">
                 <div class="indexContentMenuCellInner">
                   <h3 class="indexContentMenuCellHeader">Call of Wind 风之唤</h3>
                   <p class="indexContentMenuCellText">
@@ -100,7 +101,7 @@
           </div>
           <div class="indexContentMenuRow">
             <div class="indexContentMenuItem02">
-              <a href="" id="index--MenuCell03" class="indexContentMenuCell">
+              <a href="./projects/index.html#container--Article06" id="index--MenuCell03" class="indexContentMenuCell">
                 <div class="indexContentMenuCellInner">
                   <h3 class="indexContentMenuCellHeader">Guns Out 亮枪</h3>
                   <p class="indexContentMenuCellText">
@@ -112,7 +113,7 @@
               </a>
             </div>
             <div class="indexContentMenuItem02">
-              <a href="" id="index--MenuCell04" class="indexContentMenuCell">
+              <a href="./projects/index.html#container--Article04" id="index--MenuCell04" class="indexContentMenuCell">
                 <div class="indexContentMenuCellInner">
                   <h3 class="indexContentMenuCellHeader">Disco Dispute 乐斗迪斯科</h3>
                   <p class="indexContentMenuCellText">
@@ -124,7 +125,7 @@
               </a>
             </div>
             <div class="indexContentMenuItem02">
-              <a href="" id="index--MenuCell05" class="indexContentMenuCell">
+              <a href="./projects/index.html#container--Article03" id="index--MenuCell05" class="indexContentMenuCell">
                 <div class="indexContentMenuCellInner">
                   <h3 class="indexContentMenuCellHeader">Catto 卡托猫</h3>
                   <p class="indexContentMenuCellText">
@@ -140,7 +141,7 @@
 
         <section class="indexContentMore">
           <div class="indexContentMoreBox">
-            <a href="" class="indexContentMoreButton">
+            <a href="./projects/index.html" class="indexContentMoreButton">
               More
               <img src="./images/Arrow_Right.webp" alt="" height="28px">
             </a>
@@ -181,7 +182,8 @@
                 <div class="indexContentMenuCellInner">
                   <p class="indexContentMenuCellText" style="height: 100%;">
                     Cel Shading<br><br>
-                    A custom Unreal Engine cel shading model that can be affected by multiple light sources or global lighting.
+                    A custom Unreal Engine cel shading model that can be affected by multiple light sources or global
+                    lighting.
                   </p>
                   <div class="indexContentMenuButton"></div>
                 </div>
@@ -206,7 +208,7 @@
 
         <section class="indexContentMore">
           <div class="indexContentMoreBox">
-            <a href="" class="indexContentMoreButton">
+            <a href="./skills/index.html" class="indexContentMoreButton">
               More
               <img src="./images/Arrow_Right.webp" alt="" height="28px">
             </a>
@@ -228,6 +230,25 @@
         </section>
       </section>
     </section>
+  </main>
+
+  <footer>
+    <div id="index--Contact">
+
+    </div>
+  </footer>
+</body>
+<script>
+
+  document.getElementById("index--MainBody").style.display = "none";
+  var vid = document.getElementById("index--videoPlayer");
+  vid.oncanplay = function() {
+    document.getElementById("index--MainBody").style.display = "inline";
+  };
+</script>
+
+</html>
+
 
 
     <!-- <div id="top">
@@ -252,15 +273,3 @@
       vero aperiam.</p>
     <div id="inner__education"></div>
     <div id="inner__job"></div> -->
-
-
-  </main>
-
-  <footer>
-    <div id="index--Contact">
-
-    </div>
-  </footer>
-</body>
-
-</html>

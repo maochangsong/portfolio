@@ -1,3 +1,14 @@
+:root{
+    --a-lighting-size: 100px;
+    --a-lighting-basecolor: #f9f7dc;
+    --a-lighting-color: #c4a162;
+    --a-lighting-hightlight-color: #47d89f;
+
+}
+.body{
+    --mouse-x: 0px;
+    --mouse-y: 0px;
+}
 #banner {
     position: fixed;
     vertical-align: middle;
@@ -7,9 +18,9 @@
 #banner::before{
     content: "";
     position: absolute;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .25) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
     width: 100%;
-    height: 100px;
+    height: 80px;
 }
 #banner--Content{
     display: flex;
@@ -80,4 +91,85 @@
 }
 .bannerNaviUnchosen:hover{
     opacity: 1;
+}
+
+#title{
+    padding-top: 150px;
+    text-align: center;
+    z-index: 100;
+}
+#title--Header{
+    margin: 30px 0;
+    font-size: 60px;
+    font-weight: 700;  
+}
+#title--Info{
+    font-size: 20px;
+    font-weight: 100;
+}
+#container{
+    margin: 0 auto;
+    max-width: 1200px;
+    z-index: 100;
+}
+.containerArticle{
+    margin: 50px 0 50px 0;
+    padding-top: 150px;
+}
+.containerArticleHeaderImg{
+    background-color: #f9f7dc;
+    width: 1200px;
+    height: 400px;
+}
+.containerArticleHeader{
+    margin: 10px 0;
+    font-size: 48px;
+    font-weight: 500;
+}
+.containerArticleText{
+    text-indent: 50px;
+    font-weight: 200;
+}
+.containerArticleText a{
+    display: inline-block; /*设定为inline-block才能使偏移量offset为局部偏移量*/
+    text-indent: 0;    
+    text-decoration: none;
+
+    background-color: var(--a-lighting-color); /*设定超链接鼠标聚光灯无法覆盖的地方的基础背景色*/
+    background-image: radial-gradient(var(--a-lighting-hightlight-color), var(--a-lighting-color)); /*设定超链接鼠标聚光灯效果渐变色*/
+    background-size: var(--a-lighting-size) var(--a-lighting-size);
+    background-repeat: no-repeat;
+    /* background-position-x: calc(var(--offsetX) - var(--a-lighting-size) / 2);
+    background-position-y: calc(var(--offsetY) - var(--a-lighting-size) / 2); */
+    background-position-x: calc(var(--mouse-x) - var(--position-x) - var(--a-lighting-size) / 2);
+    background-position-y: calc(var(--mouse-y) - var(--position-y) - var(--a-lighting-size) / 2);
+
+    color: transparent;
+    background-clip: text; /*以文字作为裁剪，显示背景图片*/
+    -webkit-background-clip: text; /*以文字作为裁剪，显示背景图片，用于webkit内核浏览器（如Chrome）*/
+}
+.containerArticleSubheader{
+    margin: 10px 0;
+}
+.containerArticlePic,.containerArticleYtb{
+    display: block;
+    margin: 10px auto;
+    width: 480px;
+    height: 270px;
+}
+.containerArticleComment{
+    margin: 0 auto 30px auto;
+    font-size: 20px;
+    color:transparent;
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+    text-shadow: 0px 0px 1px rgba(255,255,255, .5), 0px 4px 4px rgba(0, 0, 0, .15);
+}
+.containerArticleList{
+    list-style:none;
+}
+.containerArticleList li{
+    text-indent: 50px;
+    font-weight: 200;
 }
