@@ -154,8 +154,8 @@
 .containerArticlePic,.containerArticleYtb{
     display: block;
     margin: 10px auto;
-    width: 480px;
-    height: 270px;
+    width: 640px;
+    height: 360px;
 }
 .containerArticleComment{
     margin: 0 auto 30px auto;
