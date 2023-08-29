@@ -51,6 +51,11 @@
   </header>
 
   <main id="container">
+    <div id="index--Loading">
+      <div id="index--LoadingImg">
+      </div>
+    </div>
+
     <section id="index--BackVideo">
       <video autoplay muted loop plays-inline id="index--videoPlayer" class="backvideo">
         <source src="./videos/MainPageVideo.mp4" type="video/mp4">
@@ -75,7 +80,8 @@
         <section class="indexContentMenu">
           <div class="indexContentMenuRow">
             <div class="indexContentMenuItem01">
-              <a href="./projects/index.html#container--Article01" id="index--MenuCell01" class="indexContentMenuCell"> <!--animate__animated animate__fadeInUp-->
+              <a href="./projects/index.html#container--Article01" id="index--MenuCell01" class="indexContentMenuCell">
+                <!--animate__animated animate__fadeInUp-->
                 <div class="indexContentMenuCellInner">
                   <h3 class="indexContentMenuCellHeader">Countdown World 倒计世界</h3>
                   <p class="indexContentMenuCellText">
@@ -239,19 +245,23 @@
   </footer>
 </body>
 <script>
-
-  document.getElementById("index--MainBody").style.display = "none";
-  var vid = document.getElementById("index--videoPlayer");
-  vid.oncanplay = function() {
-    document.getElementById("index--MainBody").style.display = "inline";
-  };
+  document.getElementById("index--MainBody").style.overflow = "hidden"; // 禁用滚动条
+  document.getElementById("index--videoPlayer").oncanplay = function() {
+    document.getElementById("index--MainBody").style.overflow = "auto"; // 释放滚动条
+    document.getElementById("index--LoadingImg").style.display = "none";
+    var load = document.getElementById("index--Loading");
+    load.style.animationPlayState = "running";
+    load.addEventListener("animationend", ()=>{
+      document.getElementById("index--Loading").style.display="none";
+    });
+    };
 </script>
 
 </html>
 
 
 
-    <!-- <div id="top">
+<!-- <div id="top">
       <div id="top__banner">
         <a href="#inner__education" class="top__banner__button hvr-grow">
           hvr-grow-test1234
@@ -262,7 +272,7 @@
       </div>
     </div> -->
 
-    <!-- <div>
+<!-- <div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/5YadqILpFzI" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
