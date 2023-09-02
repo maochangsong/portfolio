@@ -1,55 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SKILLS | Changsong's Portfolio</title>
-        <link rel="stylesheet" href="../css/font.css">
-        <link rel="stylesheet" href="../css/global.css">
-        <link rel="stylesheet" href="../css/backgroundMove.css">
-        <link rel="stylesheet" href="../css/subpage.css">
-    </head>
-    
-    <body style="min-height: 10000px;">
-        <header>
-            <div id="banner">
-                <div id="banner--Content">
-                    <h1 id="banner--NameLogo">
-                        <a href="../index.html">"Changsong Mao Portfolio 毛常松作品集"</a>
-                    </h1>
-                    <nav id="banner--Navi">
-                        <ul>
-                            <li class="bannerNaviUnchosen">
-                                <a href="../projects/index.html" id="banner--Navi01">"作品"</a>
-                            </li>
-                            <li class="bannerNaviChosen">
-                                <a href="../skills/index.html" id="banner--Navi02">"技能"</a>
-                            </li>
-                            <li class="bannerNaviUnchosen">
-                                <a href="../keywords/index.html" id="banner--Navi03">"关键词"</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>            
-            </div>
-        </header>
-    
-        <main>
-            <div class="movingBackground"></div>
 
-            <section id="title">
-                <h2 id="title--Header">Skills</h2>
-                <p id="title--Info">
-                    I often imitate the effects in my favourite games<br>
-                    and implement them using Unity or Unreal<br>
-                    as an exercise for my game programming, technical art, or technical audio skills.
-                </p>
-            </section>
-        </main>
-    
-        <footer>
-    
-        </footer>
-    </body>
-    
-    </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILLS | Changsong's Portfolio</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/backgroundMove.css">
+    <link rel="stylesheet" href="../css/subpage.css">
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+            <div id="banner--Content">
+                <h1 id="banner--NameLogo">
+                    <a href="../index.html">"Changsong Mao Portfolio 毛常松作品集"</a>
+                </h1>
+                <nav id="banner--Navi">
+                    <ul>
+                        <li class="bannerNaviUnchosen">
+                            <a href="../projects/index.html" id="banner--Navi01">"作品"</a>
+                        </li>
+                        <li class="bannerNaviChosen">
+                            <a href="../skills/index.html" id="banner--Navi02">"技能"</a>
+                        </li>
+                        <li class="bannerNaviUnchosen">
+                            <a href="../keywords/index.html" id="banner--Navi03">"关键词"</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="movingBackground"></div>
+
+        <section id="title">
+            <h2 id="title--Header">Skills</h2>
+            <p id="title--Info">
+                I often imitate the effects in my favourite games<br>
+                and implement them using Unity or Unreal<br>
+                as an exercise for my game programming, technical art, or technical audio skills.
+            </p>
+        </section>
+
+        <section id="container">
+            <article id="container--Article01" class="containerArticle">
+                <h3 class="containerArticleHeader">Technical Art</h3>
+                <img src="./img/Skill_01_01.jpg" alt="" class="containerArticleHeaderImg">
+                <section>
+                    <p class="containerArticleText">
+                        During my bachelor studies, I learnt about computer graphics and could implement materials or
+                        shaders in Unity or Unreal Engine to achieve some rendering effects.
+                    </p>
+
+                    <h4 id="container--Article01--01" class="containerArticleSubheader">Grass shader</h4>
+                    <p class="containerArticleText">
+                        I made the grass shader in UE4 that can interact with the player, the NPCs and the objects. I
+                        also made the rain effects (particle system and screen post-processing) in this demo.
+                        <a href="https://csmao.itch.io/interactive-grass-and-rain-effect" target="_blank">Click here</a>
+                        to download the demo.
+                    </p>
+                    <p class="containerArticleText">
+                        Here is the demonstration video.
+                    </p>
+                    <iframe class="containerArticleYtb"
+                        src="https://www.youtube.com/embed/SO2sUyfj_CE?si=bzncaEUkUEjE4f9O" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p class="containerArticleComment">Demonstration video</p>
+
+                    <h4 id="container--Article01--02" class="containerArticleSubheader">Toon shading</h4>
+                    <p class="containerArticleText">
+                        I implemented a cel shading effect that imitates The Legend of Zelda: Breath of the Wild / Tears
+                        of the Kingdom,
+                        by modifying Unreal Engine's source code to create a custom shading model.
+                        It can be affected by all the light sources and global illumination.
+                    </p>
+                    <p class="containerArticleText">
+                        Here is the demonstration video.
+                    </p>
+                    <iframe class="containerArticleYtb"
+                        src="https://www.youtube.com/embed/C_eU7J-floI?si=UYX1_8ehz50k_7PP" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p class="containerArticleComment">Demonstration video</p>
+                    <p class="containerArticleComment">※ The model assets in this video are downloaded from the Internet
+                        and only used for learning and exercise.</p>
+                </section>
+            </article>
+
+            <article id="container--Article02" class="containerArticle">
+                <h3 class="containerArticleHeader">Gameplay/UI Programming</h3>
+                <img src="./img/Skill_02_01.jpg" alt="" class="containerArticleHeaderImg">
+                <section>
+                    <p class="containerArticleText">
+                        Thanks to my experience studying at university and producing game projects, I have an
+                        understanding of almost every aspect of game programming.
+                    </p>
+
+                    <h4 id="container--Article02--01" class="containerArticleSubheader">Dialogue system & UI</h4>
+                    <p class="containerArticleText">
+                        I used Unity's TextMeshPro component to implement a dialogue system with its UI effects.
+                        It can output text in typewriter style and supports rich text effects, such as modifying the
+                        colour or font size of part of the text in a sentence.
+                        At the same time, I added annotation (Chinese or Japanese pronunciation symbols) function to it.
+                    </p>
+                    <p class="containerArticleText">
+                        Here is the demonstration video.
+                    </p>
+                    <iframe class="containerArticleYtb"
+                        src="https://www.youtube.com/embed/Dy0Nuvd8_Ww?si=cBEEVxTR_Vm-g0B1" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <p class="containerArticleComment">Demonstration video</p>
+                </section>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+<script type="text/javascript" src="../js/highlight.js"></script>
+
+</html>

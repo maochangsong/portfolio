@@ -196,15 +196,15 @@ ul {
 }
 
 #index--Contents::before {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .35) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
     top: 0;
     height: 500px;
 }
 
 #index--Contents::after {
-    background-color: rgba(0, 0, 0, .35);
+    background-color: rgba(0, 0, 0, .5);
     top: 500px;
-    height: calc(100% - 500px + 100px);
+    height: calc(100% - 500px + 50px);
 }
 
 #index--Header::before,
@@ -237,10 +237,14 @@ ul {
 }
 
 #index--Contact {
-    height: 100px;
-    border-style: dotted;
-    border-width: 3px;
-    border-color: aqua;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+.indexContactImg, .indexContactText{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
 }
 
 .indexContentHeader {
@@ -460,3 +464,21 @@ ul {
     opacity: 1;
 }
 
+.indexContentAbstract{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px auto 0 auto;
+    width: fit-content;
+}
+.indexContentAbstractLine{
+    margin: 0 auto;
+    width: fit-content;
+    font-weight: 200;
+    font-style: italic;
+}
+.indexContentMaintext{
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1436px;    
+}
