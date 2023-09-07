@@ -474,6 +474,7 @@ ul {
 .indexContentAbstractLine{
     margin: 0 auto;
     width: fit-content;
+    font-size: 36px;
     font-weight: 200;
     font-style: italic;
 }

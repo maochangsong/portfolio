@@ -1,14 +1,14 @@
 document.querySelector('body').addEventListener('mousemove', (e)=>{
-    e.currentTarget.style.setProperty('--mouse-x', `${e.clientX}px`);
-    e.currentTarget.style.setProperty('--mouse-y', `${e.clientY}px`);
+    e.currentTarget.style.setProperty('--mouse-x', `${e.clientX}`);
+    e.currentTarget.style.setProperty('--mouse-y', `${e.clientY}`);
 });
 
 function setLinksPositions() {
     document.querySelectorAll('a').forEach((a)=>{
         const bounding = a.getBoundingClientRect();
 
-        a.style.setProperty('--position-x', `${bounding.x}px`);
-        a.style.setProperty('--position-y', `${bounding.y}px`);
+        a.style.setProperty('--position-x', `${bounding.x}`);
+        a.style.setProperty('--position-y', `${bounding.y}`);
     });
 }
 // 在页面尺寸改变的时候，重新设置聚光灯超链接的矩形位置
