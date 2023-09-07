@@ -1,9 +1,9 @@
 :root {
-    --a-lighting-size: 100px;
+    --a-lighting-size: 60px;
     --a-lighting-basecolor: #f9f7dc;
     --a-lighting-color: #c4a162;
-    --a-lighting-hightlight-color: #47d89f;
-
+    /* --a-lighting-hightlight-color: #47d89f; */
+    --a-lighting-hightlight-color: #fff194;
 }
 
 .body {
@@ -171,11 +171,18 @@
     background-position-y: calc((var(--mouse-y) - var(--position-y)) * 1px - var(--a-lighting-size) / 2);
 
     color: transparent;
+    /* text-shadow: 0px 0 10px #0fa; */
     background-clip: text;
     /*以文字作为裁剪，显示背景图片*/
     -webkit-background-clip: text;
     /*以文字作为裁剪，显示背景图片，用于webkit内核浏览器（如Chrome）*/
+
+    /* transition-duration: 0.15s; */
 }
+/* .containerArticleText a:hover{
+    text-shadow: 0px 0 20px var(--a-lighting-hightlight-color);
+    transition-duration: 0.15s;
+} */
 
 .containerArticleSubheader {
     margin: 10px 0;
