@@ -253,9 +253,9 @@
   </footer>
 </body>
 <script>
-  document.getElementById("index--MainBody").style.overflow = "hidden"; // 禁用滚动条
+  // document.getElementById("index--MainBody").style.overflow = "hidden"; // 禁用滚动条
   document.getElementById("index--videoPlayer").oncanplay = function () {
-    document.getElementById("index--MainBody").style.overflow = "auto"; // 释放滚动条
+    // document.getElementById("index--MainBody").style.overflow = "auto"; // 释放滚动条
     document.getElementById("index--LoadingImg").style.display = "none";
     var load = document.getElementById("index--Loading");
     load.style.animationPlayState = "running";

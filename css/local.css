@@ -10,7 +10,7 @@ img {
 
     opacity: 1;
 
-    z-index: 1000;
+    z-index: -50;
 
     animation: loadingFadeOut 0.3s linear 1;
     animation-play-state: paused;
