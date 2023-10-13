@@ -4,7 +4,7 @@ document.querySelector('body').addEventListener('mousemove', (e)=>{
 });
 
 function setLinksPositions() {
-    document.querySelectorAll('a').forEach((a)=>{
+    document.querySelectorAll('.containerArticleKeypoint').forEach((a)=>{
         const bounding = a.getBoundingClientRect();
 
         a.style.setProperty('--position-x', `${bounding.x}`);
