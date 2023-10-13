@@ -423,13 +423,13 @@ ul {
     width: 100%;
     height: 160px;
     top: 0;
-    padding-top: 30px;
+    padding-top: 60px;
     font-size: 28px;
     opacity: 0;
     transition-duration: 0.25s;
 }
 .indexContentMenuCellInner:hover .indexContentMenuCellText{
-    padding-top: 0;
+    padding-top: 20px;
     opacity: 1;
 }
 #index--MenuCell01 .indexContentMenuCellInner .indexContentMenuCellHeader{  
@@ -446,6 +446,15 @@ ul {
 }
 #index--MenuCell05 .indexContentMenuCellInner .indexContentMenuCellHeader{
     background: url(../images/MenuItemHeader_05.png) no-repeat center;
+}
+#index--MenuCell06 .indexContentMenuCellInner .indexContentMenuCellHeader{
+    background: url(../images/MenuItemHeader_06.png) no-repeat center;
+}
+#index--MenuCell07 .indexContentMenuCellInner .indexContentMenuCellHeader{
+    background: url(../images/MenuItemHeader_07.png) no-repeat center;
+}
+#index--MenuCell08 .indexContentMenuCellInner .indexContentMenuCellHeader{
+    background: url(../images/MenuItemHeader_08.png) no-repeat center;
 }
 .indexContentMenuButton{
     float: right;

@@ -149,6 +149,11 @@
     font-weight: 700;
 }
 
+.containerArticleHeaderComment {
+    font-size: 28px;
+    font-weight: 100;
+}
+
 .containerArticleText {
     margin: 20px 0;
     font-weight: 200;
@@ -182,8 +187,7 @@
     /*以文字作为裁剪，显示背景图片，用于webkit内核浏览器（如Chrome）*/
 }
 
-.containerArticleTable {
-}
+.containerArticleTable {}
 
 .containerArticleTable td {
     padding-right: 32px;
@@ -263,14 +267,12 @@
     transform: rotateX(0deg);
 }
 
-.keywordCard:hover .keywordCardContainer{
+.keywordCard:hover .keywordCardContainer {
     box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
     border-radius: 0px;
 
     perspective: 1000px;
-    transform: perspective(1000px) 
-    rotateX(calc(clamp(-1, (var(--position-y) + var(--height-half) - var(--mouse-y)) / var(--height-half), 1)  * 10deg)) 
-    rotateY(calc(clamp(-1, (var(--position-x) + var(--width-half) - var(--mouse-x)) / var(--width-half), 1)  * -5deg));
+    transform: perspective(1000px) rotateX(calc(clamp(-1, (var(--position-y) + var(--height-half) - var(--mouse-y)) / var(--height-half), 1) * 10deg)) rotateY(calc(clamp(-1, (var(--position-x) + var(--width-half) - var(--mouse-x)) / var(--width-half), 1) * -5deg));
 }
 
 .keywordCardContainer h2 {
@@ -292,7 +294,7 @@
 .keywordCardInner {
     box-sizing: border-box;
     /* 以border范围作为width和height的尺寸衡量标准 */
-    background-color:rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5);
     border-image: url(../images/MenuItemBorder02.png) 64 fill repeat;
     border-style: solid;
     border-width: 30px;
@@ -308,6 +310,4 @@
     opacity: 1;
 }
 
-.keywordCardInner p {
-
-}
+.keywordCardInner p {}
