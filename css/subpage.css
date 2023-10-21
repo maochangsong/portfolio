@@ -173,7 +173,8 @@
     width: 100%;
     color: var(--text-color-unselect);
     text-decoration: none;
-    font-size: 100%;
+    /* font-size: 100%; */
+    font-weight: 700;
     --index-self: 0;
     /* font-size: 0.7rem; */
 }
