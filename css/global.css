@@ -37,3 +37,16 @@ body,main,ul,li,div,section,h1,h2,h3,h4,h5,p,b,a,img {
     outline: none;
     /* text-decoration: none; */
 }
+
+#index--Contact {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+    height: auto;
+}
+.indexContactImg, .indexContactText{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+}

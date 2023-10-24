@@ -84,6 +84,11 @@
     width: calc(0.25 * 419px);
 }
 
+#banner--Navi--CV {
+    background: url(../images/NaviLogo_CV.png) no-repeat center;
+    width: calc(0.25 * 419px);
+}
+
 #banner--Navi03 {
     background: url(../images/NaviLogo03.png) no-repeat center;
     width: calc(0.25 * 545px);

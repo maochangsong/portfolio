@@ -123,6 +123,7 @@ img {
 
 #index--NaviLogo--1,
 #index--NaviLogo--2,
+#index--NaviLogo--CV,
 #index--NaviLogo--3,
 #index--NaviLogo--4 {
     display: inline-block;
@@ -154,7 +155,14 @@ img {
 #index--NaviLogo--2:hover {
     background-image: url(../images/NaviLogo02_hover.png);
 }
-
+#index--NaviLogo--CV{
+    background-image: url(../images/NaviLogo_CV.png);
+    width: calc(0.3 * 419px);
+    max-width: calc(20dvw * (419 / 1440));
+}
+#index--NaviLogo--CV:hover{
+    background-image: url(../images/NaviLogo_CV_hover.png);
+}
 #index--NaviLogo--3 {
     background-image: url(../images/NaviLogo03.png);
     width: calc(0.3 * 545px);
@@ -218,8 +226,7 @@ ul {
 
 #index--Projects,
 #index--Skills,
-#index--About,
-#index--Contact {
+#index--About {
     position: relative;
     height: auto;
 }
@@ -236,16 +243,6 @@ ul {
     margin-top: 100px;
 }
 
-#index--Contact {
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-}
-.indexContactImg, .indexContactText{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 20px;
-}
 
 .indexContentHeader {
     display: flex;
